@@ -1,4 +1,4 @@
-# 🧠 Hybrid Skin Type Classification Using Deep Learning
+# 🧠 A Hybrid Machine Learning Approach for Personalized Skincare Recommendations Using Questionnaire Data and Real-Time Skin Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
 ![PyTorch](https://img.shields.io/badge/Framework-PyTorch-red?logo=pytorch)
@@ -9,7 +9,9 @@
 
 ### 📘 Course: Technical Answers for Real World Problems (CBS1901)  
 **Student:** Atharwa Vatsyayan  
-**Register Number:** 22BBS0103  
+**Register Number:** 22BBS0103 
+**Student:** Rishi Anand  
+**Register Number:** 22BBS00227 
 **Faculty Mentor:** Dr. Santhi K  
 **Semester:** Fall 2025-26  
 
