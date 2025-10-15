@@ -102,5 +102,78 @@ Install dependencies with:
 pip install torch torchvision numpy pandas matplotlib seaborn scikit-learn tqdm pillow
 
 
-The dataset consists of categorized facial skin images organized as:
+🚀 How to Run
 
+Clone this repository
+
+git clone https://github.com/<your-username>/hybrid-skin-type-classification.git
+cd hybrid-skin-type-classification
+
+
+Run the main script
+
+python Main.py
+
+
+(Optional) Classify a custom image
+
+from Main import classify_custom_image, load_model
+model, mapping = load_model("skin_classification_4_types_model.pth")
+result = classify_custom_image(model, "sample.jpg", transform)
+print(result)
+
+💾 Example Output
+Predicted class: oily
+Confidence: 0.9321
+
+Probabilities:
+dry: 0.0214
+normal: 0.0133
+oily: 0.9321
+combination: 0.0332
+
+📈 Evaluation Results
+Skin Type	Precision	Recall	F1-score
+Dry	0.70	0.78	0.74
+Normal	0.90	0.90	0.90
+Oily	0.90	0.75	0.82
+Combination	0.90	1.00	0.95
+
+Weighted Average Accuracy: 85%
+
+🧠 Core Functions
+Function	Description
+create_df(base)	Loads dataset images and labels
+CloudDS(Dataset)	Custom PyTorch dataset class
+train_model()	Trains and validates the model
+evaluate_model()	Evaluates model performance
+classify_custom_image()	Predicts class for a custom image
+save_model() / load_model()	Save and reload model weights
+🧩 Repository Structure
+├── Main.py
+├── README.md
+├── skin_classification_4_types_model.pth
+├── /final_self_skin_dataset
+│   ├── train/
+│   ├── valid/
+│   └── test/
+└── requirements.txt
+
+🎥 Demonstration Video
+
+📹 Google Drive Link to Demo Video
+ (Add your actual link here)
+
+🧩 Future Enhancements
+
+Integrate questionnaire data for hybrid recommendation.
+
+Develop a web-based interface using Flask or Streamlit.
+
+Add live webcam input for real-time skin type detection.
+
+Suggest personalized skincare products based on results.
+
+🏁 Conclusion
+
+This project demonstrates a robust AI-powered skincare analysis tool that combines computer vision and machine learning for personalized skin type prediction. The system performs with high accuracy and serves as a foundation for next-generation skincare recommendation platforms.
